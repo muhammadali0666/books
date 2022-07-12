@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookshelter</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+  <!-- header  -->
+  <header>
+    <div class="container">
+      <div class="header-inner">
+
+        <a href="#" class="header-link">
+          <img class="header-link-logo" src="./img/hom-page-logo.png" alt="logo" width="226" height="44">
+        </a>
+
+        <form class="form">
+          <img class="header-search-img" src="./img/search.png" alt="search" width="19" height="18">
+          <input class="header-input" type="text" placeholder="Search books">
+        </form>
+        <div class="wrapper">
+          <img class="header-next-img" src="./img/sun.png" alt="sun" width="23" height="23">
+          <button class="header-button" id="logout">
+            Logout
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+  </header>
+  <!-- header  -->
+  <div class="header-bottom-box">
+    <div class="container">
+      <div class="header-bottom-box-inner">
+
+        <div class="box">
+          <p class="header-bottom-box-p">
+            Showing <span class="header-bottom-box-span text-primary">
+              18
+            </span> Result(s)
+          </p>
+
+          <button class="header-bottom-box-button">
+            <img class="header-bottom-box-img" src="./img/calendar.png" alt="calendar" width="24" height="24">
+            Order by newest
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section class="result">
+      <div class="container">
+        <div class="result-inner">
+
+          <div class="result-box">
+            <h3 class="result-box-paragraph">
+              Bookmarks
+            </h3>
+            <p class="result-box-p ">
+              If you don’t like to read, you haven’t found the right book
+            </p>
+            <ul class="bookmarks-list"> </ul>
+          </div>
+
+          <div>
+            <ul class="result-box-second flex-wrap">
+
+              <li class="result-box-second-item">
+                <div class="box-inner">
+                  <img src="./img/python.png" alt="" class="result-box-second-item-img mb-4" width="250" height="250">
+                </div>
+                <div class="result-box-second-box">
+                  <h4 class="result-box-paragraph mb-1">
+                    Python
+                  </h4>
+                  <p class="result-box-ps mb-1">
+                    David M. Beazley
+                  </p>
+                  <p class="result-box-texts mb-1">
+                    2009
+                  </p>
+                  <div class="result-box-bottom">
+                    <button class="result-button-first">
+                      Bookmark
+                    </button>
+
+                    <button class="btn ms-2 canvas-button bg-success bg-opacity-10" type="button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight">More Info</button>
+        
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasRightLabel">Python 3</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      ...
+                    </div>
+                  </div>
+
+                  </div>
+                  <a href="" target="_blank" class="text-center end-btn w-100">
+                    Read
+                  </a>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="btn-inner">
+
+          <div class="bottom-div d-flex">
+            <button class="prev-button">
+              <
+            </button>
+            <div class="bottom-div-in">
+  
+            </div>
+            <button class="next-button ms-5">
+              >
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+  </script>
+  <script src="./js/utils.js"></script>
+  <script src="./js/home.js"></script>
+</body>
+
+</html>
